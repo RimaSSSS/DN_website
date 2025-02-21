@@ -12,6 +12,7 @@
 
   <!-- Main Content -->
   <main>
+    <!-- Hero Section -->
     <section class="hero">
       <h1>Shaping the Future of Neuroscience & AI</h1>
       <p>An advanced, research-driven Master’s program integrating neuroscience, AI, and multimodal systems.</p>
@@ -22,16 +23,107 @@
       </div>
     </section>
 
+    <!-- About the Program -->
     <section id="about" class="section">
       <h2>About the Program</h2>
-      <p>The Digital Neuroscience Master’s Program at the University of Fribourg offers a rigorous interdisciplinary curriculum that combines advanced neuroscience with data analytics, AI, and human-machine interaction.</p>
+      <p>
+        The Digital Neuroscience Master’s Program at the University of Fribourg offers a rigorous, interdisciplinary 
+        curriculum that integrates advanced neuroscience with data analytics, AI, and human-machine interaction. 
+      </p>
+      <p>
+        Whether you aim for a career in academic research, industry innovation, or neurotechnology startups, 
+        this program equips you with the skills to lead the future of neuroscience-driven AI.
+      </p>
+    </section>
+
+    <!-- Research & Innovation Pillars -->
+    <section id="research" class="section">
+      <h2>Research & Innovation</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/images/placeholder-icon1.png" alt="Brain & Behavior">
+          <h3>Understanding Brain & Behavior</h3>
+          <p>From single-neuron recordings to fMRI and EEG studies, explore the mechanisms of cognition and perception.</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/placeholder-icon2.png" alt="Human Augmentation">
+          <h3>Human Augmentation & Adaptive AI</h3>
+          <p>Develop neuroadaptive interfaces, cognitive XR applications, and AI-driven learning systems.</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/placeholder-icon3.png" alt="Neuroscience Tech">
+          <h3>Neuroscience-Driven Technology</h3>
+          <p>Innovate in wearable EEG, multimodal biometrics, and data-driven neuroinformatics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Video Section -->
+    <section class="section">
+      <h2>Explore Our Research Labs</h2>
+      <p>Take an interactive tour of our cutting-edge neuroscience and AI facilities.</p>
+      <div class="cta-buttons">
+        <a href="research.html">Launch Interactive Video</a>
+      </div>
+      <div style="margin-top:20px;">
+        <video width="640" height="360" controls poster="assets/images/placeholder-video-thumbnail.jpg">
+          <source src="assets/videos/placeholder-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Curriculum Overview -->
+    <section id="curriculum" class="section">
+      <h2>Curriculum Overview</h2>
+      <p>The program comprises 120 ECTS over two years, including core courses (41 ECTS), elective courses (19 ECTS), and a Master Thesis (60 ECTS).</p>
+      <div class="cta-buttons">
+        <a href="curriculum.html">View Full Curriculum</a>
+      </div>
+    </section>
+
+    <!-- Student & Faculty Testimonials -->
+    <section class="testimonials">
+      <h2>What Our Community Says</h2>
+      <div class="testimonial">
+        <p>"The hands-on EEG research and AI coursework prepared me to co-found a neurotech startup."</p>
+        <p><strong>– Alexandra M., Class of 2024</strong></p>
+      </div>
+      <div class="testimonial">
+        <p>"This program allows students to apply theory in real-world challenges. The interdisciplinary approach is transformative."</p>
+        <p><strong>– Prof. Dr. [Name], Cognitive Systems Research Group</strong></p>
+      </div>
+    </section>
+
+    <!-- Career Opportunities -->
+    <section id="career" class="section">
+      <h2>Career Opportunities</h2>
+      <p>Our graduates work in fields like:</p>
+      <ul style="list-style-type:none; padding:0;">
+        <li>🎓 PhD & Academic Research</li>
+        <li>🏥 Neurotechnology & Healthcare</li>
+        <li>🕶️ Adaptive Learning & XR Innovation</li>
+        <li>📊 AI & Data-Driven Neuroscience</li>
+      </ul>
+      <div class="cta-buttons">
+        <a href="careers.html">Explore Career Paths</a>
+      </div>
+    </section>
+
+    <!-- Blog / Monthly Digest -->
+    <section id="blog" class="section">
+      <h2>Digital Neuroscience Monthly Digest</h2>
+      <p>Stay informed about the latest research, events, and student highlights.</p>
+      <div class="cta-buttons">
+        <a href="blog.html">Read the Latest Posts</a>
+      </div>
     </section>
   </main>
 
   <!-- Dynamic Footer -->
   <div id="footer"></div>
 
-  <!-- JavaScript to Load Header & Footer -->
+  <!-- JavaScript to Load Header and Footer -->
   <script>
     fetch('header.html')
       .then(response => response.text())

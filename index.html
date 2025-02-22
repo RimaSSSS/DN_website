@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,134 +8,173 @@
   <title>Digital Neuroscience MSc - University of Fribourg</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">
+  ↑ Back to Top
+</button>
+
+<!-- Back to Top Script -->
+<script>
+  // Show/Hide Button on Scroll
+  window.onscroll = function() {
+    var button = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      button.style.display = "block";
+    } else {
+      button.style.display = "none";
+    }
+  };
+
+  // Scroll Smoothly to Top
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+</script>
+
 <body>
-  <!-- Dynamic Header -->
-  <div id="header"></div>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1>Shaping the Future of Neuroscience & AI</h1>
-      <p>An advanced, research-driven Master’s program integrating neuroscience, AI, and multimodal systems.</p>
-      <div class="cta-buttons">
-        <a href="admissions.html">Apply Now</a>
-        <a href="assets/docs/brochure.pdf">Download Brochure</a>
-        <a href="curriculum.html">Explore Curriculum</a>
-      </div>
-    </section>
+<!-- Header -->
+  <header>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
-    <!-- About the Program -->
-    <section id="about" class="section">
-      <h2>About the Program</h2>
-      <p>
-        The Digital Neuroscience Master’s Program at the University of Fribourg offers a rigorous, interdisciplinary 
-        curriculum that integrates advanced neuroscience with data analytics, AI, and human-machine interaction. 
-      </p>
-      <p>
-        Whether you aim for a career in academic research, industry innovation, or neurotechnology startups, 
-        this program equips you with the skills to lead the future of neuroscience-driven AI.
-      </p>
-    </section>
-
-    <!-- Research & Innovation Pillars -->
-    <section id="research" class="section">
-      <h2>Research & Innovation</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="assets/images/placeholder-icon1.png" alt="Brain & Behavior">
-          <h3>Understanding Brain & Behavior</h3>
-          <p>From single-neuron recordings to fMRI and EEG studies, explore the mechanisms of cognition and perception.</p>
-        </div>
-        <div class="card">
-          <img src="assets/images/placeholder-icon2.png" alt="Human Augmentation">
-          <h3>Human Augmentation & Adaptive AI</h3>
-          <p>Develop neuroadaptive interfaces, cognitive XR applications, and AI-driven learning systems.</p>
-        </div>
-        <div class="card">
-          <img src="assets/images/placeholder-icon3.png" alt="Neuroscience Tech">
-          <h3>Neuroscience-Driven Technology</h3>
-          <p>Innovate in wearable EEG, multimodal biometrics, and data-driven neuroinformatics.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Video Section -->
-    <section class="section">
-      <h2>Explore Our Research Labs</h2>
-      <p>Take an interactive tour of our cutting-edge neuroscience and AI facilities.</p>
-      <div class="cta-buttons">
-        <a href="research.html">Launch Interactive Video</a>
-      </div>
-      <div style="margin-top:20px;">
-        <video width="640" height="360" controls poster="assets/images/placeholder-video-thumbnail.jpg">
-          <source src="assets/videos/placeholder-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
-
-    <!-- Curriculum Overview -->
-    <section id="curriculum" class="section">
-      <h2>Curriculum Overview</h2>
-      <p>The program comprises 120 ECTS over two years, including core courses (41 ECTS), elective courses (19 ECTS), and a Master Thesis (60 ECTS).</p>
-      <div class="cta-buttons">
-        <a href="curriculum.html">View Full Curriculum</a>
-      </div>
-    </section>
-
-    <!-- Student & Faculty Testimonials -->
-    <section class="testimonials">
-      <h2>What Our Community Says</h2>
-      <div class="testimonial">
-        <p>"The hands-on EEG research and AI coursework prepared me to co-found a neurotech startup."</p>
-        <p><strong>– Alexandra M., Class of 2024</strong></p>
-      </div>
-      <div class="testimonial">
-        <p>"This program allows students to apply theory in real-world challenges. The interdisciplinary approach is transformative."</p>
-        <p><strong>– Prof. Dr. [Name], Cognitive Systems Research Group</strong></p>
-      </div>
-    </section>
-
-    <!-- Career Opportunities -->
-    <section id="career" class="section">
-      <h2>Career Opportunities</h2>
-      <p>Our graduates work in fields like:</p>
-      <ul style="list-style-type:none; padding:0;">
-        <li>🎓 PhD & Academic Research</li>
-        <li>🏥 Neurotechnology & Healthcare</li>
-        <li>🕶️ Adaptive Learning & XR Innovation</li>
-        <li>📊 AI & Data-Driven Neuroscience</li>
+    <nav>
+      <div class="logo">Digital Neuroscience MSc</div>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="cta-buttons">
-        <a href="careers.html">Explore Career Paths</a>
-      </div>
-    </section>
+      <a href="admissions.html" class="cta-button">Apply Now</a>
+    </nav>
+  </header>
 
-    <!-- Blog / Monthly Digest -->
-    <section id="blog" class="section">
-      <h2>Digital Neuroscience Monthly Digest</h2>
-      <p>Stay informed about the latest research, events, and student highlights.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay loop muted playsinline id="hero-video">
+      <source src="assets/videos/brain_hand.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Shaping the Future of Neuroscience, AI, and Human-Centric Innovation</h1>
+      <p>A cutting-edge Master’s program integrating neurobehavioral science, machine learning, and multimodal interface design.</p>
       <div class="cta-buttons">
-        <a href="blog.html">Read the Latest Posts</a>
+        <a href="admissions.html" class="cta-button">Apply Now</a>
+        <a href="assets/docs/brochure.pdf" class="cta-button">Download Brochure</a>
+        <a href="curriculum.html" class="cta-button">Explore Curriculum</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+</body>
+
+
+  <!-- About the Program -->
+  <section id="about" data-aos="fade-up">
+    <h2>About the Program</h2>
+    <p>The Digital Neuroscience Master’s Program at the University of Fribourg combines advanced neuroscience with data science, AI, and human-machine interaction.</p>
+    <div class="about-container">
+      <<div class="about-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Innovation</h3>
+        <p>Merging neuroscience, artificial intelligence, virtual & augmented reality, and advanced biosensing technologies.</p>
+      </div>
+      <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Human-Centric Design</h3>
+        <p>Focusing on user-centered, ethical solutions that enhance human performance, accessibility, and well-being.</p>
+      </div>
+      <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Scientific Rigor</h3>
+        <p>Grounded in robust experimental methodologies, peer-reviewed research, and ethical considerations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Innovation -->
+  <section id="research" data-aos="fade-up">
+    <h2>Research & Innovation</h2>
+    <div class="research-container">
+      <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Understanding Brain & Behavior</h3>
+        <p>From single-neuron recordings in animal models to fMRI and EEG in humans.</p>
+      </div>
+      <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Human Augmentation & Adaptive AI</h3>
+        <p>Designing smart perception interfaces, augmented/virtual reality, and real-time feedback loops.</p>
+      </div>
+      <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Neuroscience-Driven Technology</h3>
+        <p>Pioneering sensor systems and advanced algorithms for large-scale data analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Opportunities -->
+  <section id="careers" data-aos="fade-up">
+    <h2>Career Opportunities</h2>
+    <p>Graduates of the Digital Neuroscience MSc program go on to pursue careers in academia, industry, policy, and entrepreneurship.</p>
+    
+    <div class="career-container">
+      <div class="career-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>PhD & Research</h3>
+        <p>Lead innovative neuroscience research in academia, hospitals, or AI-driven cognition labs.</p>
+      </div>
+      <div class="career-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Industry & Innovation</h3>
+        <p>Apply neurotechnology in healthcare, education, automotive, gaming, and human augmentation.</p>
+      </div>
+      <div class="career-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Policy & Ethics</h3>
+        <p>Shape governance frameworks for AI, neurodata privacy, and ethical neurotech applications.</p>
+      </div>
+      <div class="career-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Entrepreneurship</h3>
+        <p>Launch neurotech startups, design cognitive learning platforms, or innovate in adaptive rehabilitation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Next Steps -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact & Next Steps</h2>
+    <p>Have questions? Stay connected with us for updates, admissions guidance, and research insights.</p>
+
+    <div class="contact-info">
+      <p><strong>📍 Department of Digital Neuroscience</strong></p>
+      <p>📧 Email: <a href="mailto:msc-dn@unifr.ch">msc-dn@unifr.ch</a></p>
+      <p>🌐 Website: <a href="#">digitalneuroscience.unifr.ch</a></p>
+    </div>
+
+    <div class="cta-buttons">
+      <a href="contact.html" class="cta-button">Request More Info</a>
+      <a href="admissions.html" class="cta-button">Apply Now</a>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
 
   <!-- Dynamic Footer -->
   <div id="footer"></div>
 
-  <!-- JavaScript to Load Header and Footer -->
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('header').innerHTML = data)
-      .catch(error => console.error('Error loading header:', error));
+  <!-- JavaScript to Load Header & Footer -->
+  <script src="assets/js/loadComponents.js"></script>
+<!-- Initialize AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  /* Animation duration (1s) */
+    easing: "ease-in-out", /* Smoother effect */
+    once: true /* Animates only once when scrolled into view */
+  });
+</script>
 
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => document.getElementById('footer').innerHTML = data)
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
 </body>
 </html>

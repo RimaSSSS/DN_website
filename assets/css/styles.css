@@ -371,7 +371,8 @@ section:not(.hero):nth-child(odd) {
     width: 90%;
     margin: 0 auto;
   }
-}/* 🔹 About Page Section Layout */
+}
+/* 🔹 About Page Section Layout */
 /* 🔹 About Hero Section */
 .about-hero {
   position: relative;
@@ -404,29 +405,29 @@ section:not(.hero):nth-child(odd) {
 
 .about-section {
   display: flex;
-  align-items: center;
+  align-items: left;
+  flex-direction: column; /* Stacks content vertically */
   justify-content: space-between;
   text-align: left;
-  padding: 60px 10%;
-  gap: 50px;
+  padding: 60px 12%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden; /* Prevents text from overflowing into the next section */
+  gap: 50px;
 }
 
 /* 🔹 Text Content Styling */
 .text-content {
-  flex: 1;
-  max-width: 50%;
+  flex:1;
+  max-width:100%;
 }
 
 .text-content h2 {
-  width: 100%;
-  text-align: left;
   font-size: 28px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: #003366;
+  margin-bottom: 10px;
 }
 
 .text-content p {
@@ -440,7 +441,7 @@ section:not(.hero):nth-child(odd) {
 /* 🔹 Image Styling */
 .about-section img {
   flex: 1;
-  max-width: 45%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

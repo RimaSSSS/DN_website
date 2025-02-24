@@ -321,6 +321,32 @@ section:not(.hero):nth-child(odd) {
   background-color: #FFFFFF; /* White background */
 }
 
+/* 🔹 Alternating Background Colors for Readability */
+.about-section:nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+.about-section:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+/* 🔹 Responsive Layout for Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section p {
+    text-align: justify;
+    max-width: 100%;
+  }
+
+  .about-section img {
+    max-width: 100%;
+  }
+}
+
 
 /* 🔹 Responsive Design */
 @media (max-width: 768px) {
@@ -344,5 +370,140 @@ section:not(.hero):nth-child(odd) {
   .about-card, .research-card, .career-card {
     width: 90%;
     margin: 0 auto;
+  }
+}/* 🔹 About Page Section Layout */
+/* 🔹 About Hero Section */
+.about-hero {
+  position: relative;
+  height: 50vh; /* Adjust height for better balance */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+  background-color: #F8F8F8;
+  padding: 40px 20px;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #444;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 60px 10%;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden; /* Prevents text from overflowing into the next section */
+}
+
+/* 🔹 Text Content Styling */
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content h2 {
+  width: 100%;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #003366;
+}
+
+.text-content p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+  color: #222222;
+}
+
+/* 🔹 Image Styling */
+.about-section img {
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* 🔹 Fix for Images Not Loading */
+.about-section img:not([src]) {
+  display: none; /* Hides broken images */
+}
+
+/* 🔹 Alternating Background Colors */
+.alt-bg {
+  background-color: #F8F8F8;
+}
+
+/* 🔹 Responsive Layout for Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 8%;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .about-section img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .text-content h2 {
+    text-align: center;
+  }
+}
+
+
+/* 🔹 Responsive Layout for Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 8%;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .about-section img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .text-content h2 {
+    text-align: center;
+  }
+
+  blockquote {
+    padding-left: 0;
+    border-left: none;
+    text-align: center;
   }
 }

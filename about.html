@@ -3,65 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Program - Digital Neuroscience MSc</title>
+  <title>About | Digital Neuroscience MSc</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Dynamic Header -->
-  <div id="header"></div>
 
-  <!-- Main Content -->
-  <main>
-    <!-- About the Program -->
-    <section class="section">
-      <h1>About the Program</h1>
-      <p>
-        The Digital Neuroscience Master’s Program at the University of Fribourg combines advanced neuroscience 
-        with data science, AI, and human-machine interaction. Students gain hands-on experience designing adaptive 
-        neurotechnologies, performing multimodal brain research, and developing cybernetic systems that address 
-        real-world challenges in healthcare, education, sports, and beyond.
-      </p>
-    </section>
-
-    <!-- Core Values -->
-    <section class="section" style="background-color: #FFFFFF; text-align: left; max-width: 800px; margin: auto; padding: 40px; border-radius: 8px;">
-      <h2>Core Values</h2>
-      <ul>
-        <li><strong>Innovation & Multimodality:</strong> Merging neuroscience, AI, VR/AR, and advanced sensing.</li>
-        <li><strong>Human-Centric Design:</strong> Emphasizing ethical and user-focused solutions.</li>
-        <li><strong>Scientific Rigor:</strong> Grounded in evidence-based research and robust methodologies.</li>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Digital Neuroscience MSc</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-    </section>
+      <a href="admissions.html" class="cta-button">Apply Now</a>
+    </nav>
+  </header>
 
-    <!-- Why This Program? -->
-    <section class="section" style="text-align: left; max-width: 800px; margin: auto;">
-      <h2>Why This Program?</h2>
-      <ul>
-        <li><strong>Cutting-Edge Tools & Techniques:</strong> Master EEG, fMRI, biosensors, and AI-driven modeling.</li>
-        <li><strong>Hands-On Research:</strong> Develop real-world projects under faculty and industry mentors.</li>
-        <li><strong>Global Career Prospects:</strong> Access top-tier labs, tech companies, and startup ecosystems.</li>
-      </ul>
-    </section>
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>Why Digital Neurosciences?</h1>
+      <p>Neural mechanisms underpin societal complexity; rigorous research yields actionable solutions.</p>
+    </div>
+  </section>
 
-    <!-- Call to Action -->
-    <section class="section" style="text-align: center;">
-      <h2>Learn More</h2>
-      <p>Explore our curriculum, research labs, and career pathways to see how the Digital Neuroscience MSc can shape your future.</p>
-      <div class="cta-buttons">
-        <a href="curriculum.html">Explore Curriculum</a>
-        <a href="research.html">View Research Labs</a>
-        <a href="careers.html">Discover Career Paths</a>
-      </div>
-    </section>
-  </main>
+  <!-- Section 1: Bridging Neuroscience and AI -->
+  <section class="about-section">
+    <h2>Bridging Neuroscience and AI in the Era of Digital Transformation</h2>
+    <p>The Digital Neuroscience Master’s program was created to bridge a critical gap at the intersection of neuroscience, artificial intelligence, and human-machine interaction in the era of rapid digital transformation. Traditional neuroscience education often lacks the computational and applied dimensions needed to translate research into impactful real-world solutions. At the same time, AI and data science advancements require a deeper understanding of neurobehavioral mechanisms to create ethical, adaptive, and human-centric technologies.
 
-  <!-- Dynamic Footer -->
-  <div id="footer"></div>
+As AI-driven applications in healthcare, education, industry, and neurotechnology expand, so does the demand for experts who can bridge biological intelligence with computational models. The global neurotechnology market is projected to reach $21 billion by 2026, fueled by innovations in brain-computer interfaces (BCIs), AI-driven diagnostics, and cognitive augmentation technologies (Market Research Future, 2022). Meanwhile, the AI in healthcare market is expected to surpass $187 billion by 2030, signaling an urgent need for professionals who can integrate brain-inspired AI, real-time neural data analysis, and human-centered technology design into real-world applications (Fortune Business Insights, 2023).
 
-  <!-- JavaScript to Load Header & Footer -->
-  <script>
-    fetch('header.html').then(response => response.text()).then(data => document.getElementById('header').innerHTML = data);
-    fetch('footer.html').then(response => response.text()).then(data => document.getElementById('footer').innerHTML = data);
-  </script>
+This program was designed to equip students with the skills to lead this transformation—combining neuroscientific rigor with computational innovation to develop adaptive AI systems, brain-inspired technologies, and multimodal human-machine interfaces. Graduates will be prepared to drive advancements in neurotechnology, cognitive enhancement, and AI-driven decision-making, whether in cutting-edge research, industry innovation, or ethical policy development.</p>
+    <img src="assets/images/neuro-ai.jpg" alt="Neuroscience and AI integration">
+  </section>
+
+  <!-- Section 2: Multiscale Approach -->
+  <section class="about-section alt-bg">
+    <h2>From Neurons to Society: A Multiscale Approach</h2>
+    <p>From Neurons to Society: A Multiscale Approach to Digital Neuroscience
+A defining feature of this program is its multiscale approach to understanding cognition, behavior, and neurotechnology, spanning from single-neuron recordings to large-scale social systems.
+
+Neuron Level: The program incorporates in vivo and in vitro single-neuron recordings, computational models of neural circuits, and brain-computer interfaces (BCIs) to understand how fundamental neural processes give rise to cognition and perception.
+Systems Level: Students gain expertise in EEG, fMRI, biosensors, and multimodal neural data analysis to explore brain dynamics in cognitive states, decision-making, and learning.
+Behavioral Level: Eye-tracking, motion capture, and human-computer interaction methods allow students to study real-time neurobehavioral adaptation and cognitive workload in applied environments such as education, aviation, and high-performance sports.
+Social Level: The program extends to hyperscanning and collective intelligence models, analyzing how groups of individuals collaborate, innovate, and make decisions in complex environments like digital workspaces, smart cities, and policy design.
+This multilevel analysis enables graduates to translate neuroscientific knowledge into real-world applications, whether in precision healthcare, adaptive learning technologies, or social computing (MIT Technology Review, 2023).</p>
+    <img src="assets/images/neural-scales.jpg" alt="Neuroscience from neuron to society">
+  </section>
+
+  <!-- Section 3: Collaboration with Digital Society & Digital Law -->
+  <section class="about-section">
+    <h2>A Strategic Collaboration with Digital Society and Digital Law</h2>
+    <p>The Digital Neuroscience Master’s program does not stand alone—it coexists alongside two key strategic programs at the University of Fribourg: Digital Society and Digital Law. These three programs create a unique interdisciplinary ecosystem where students, researchers, and industry partners can address the societal, ethical, and legal challenges of AI-driven neuroscience.
+
+Digital Neuroscience (This Program): Focuses on the intersection of neuroscience and AI, developing adaptive neurotechnologies, brain-inspired machine learning, and cognitive augmentation tools.
+Digital Society: Examines the impact of AI, automation, and digital transformation on human behavior, governance, and ethical AI implementation.
+Digital Law: Provides a framework for regulating AI, neurotechnology, and digital identity, addressing questions of privacy, agency, and the legal boundaries of AI-enhanced cognition.
+This triad of programs allows students to engage in interdisciplinary research, ensuring that neuroscience-driven AI innovations align with ethical, social, and legal considerations (Harvard Business Review, 2023). By integrating technical expertise with ethical foresight, graduates will be uniquely positioned to shape the future of responsible neurotechnology.</p>
+    <img src="assets/images/venn-diagram-neuroscience-law-society.jpg" alt="Overlap of Digital Neuroscience, Society, and Law">
+  </section>
+
+  <!-- Section 4: Conclusion -->
+  <section class="about-section alt-bg">
+    <h2>Shaping the Future of Digital Neuroscience</h2>
+    <p>The Digital Neuroscience Master’s program provides a forward-looking education that prepares students to address the evolving intersection of brain science, artificial intelligence, and human augmentation. By combining rigorous neuroscientific training with cutting-edge AI applications, students will graduate with the skills to innovate in neurotechnology, AI-driven cognitive modeling, and human-machine collaboration.
+
+This program is not just about advancing science—it is about ensuring that the next generation of neuroscience-driven AI systems are ethical, scalable, and beneficial for individuals and society as a whole.
+
+📌 References
+
+Market Research Future. (2022). Neurotechnology Market Growth Report 2026.
+Fortune Business Insights. (2023). Artificial Intelligence in Healthcare Market Analysis 2030.
+MIT Technology Review. (2023). The Future of AI and Human Cognition: Scaling from Individual to Social Intelligence.
+Harvard Business Review. (2023). The Ethical Challenges of AI in Neuroscience and Society.</p>
+    <blockquote>"This program gave me the opportunity to work at the intersection of neuroscience and AI, preparing me for real-world innovation." – Student, Class of 2024</blockquote>
+    <img src="assets/images/students-lab.jpg" alt="Students working with EEG and AI">
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Digital Neuroscience MSc, University of Fribourg</p>
+  </footer>
+
 </body>
 </html>

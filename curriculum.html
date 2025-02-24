@@ -1,37 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curriculum - Digital Neuroscience MSc</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <!-- Dynamic Header -->
-  <div id="header"></div>
+<!-- Hero Section -->
+<section class="hero">
+  <!-- Background Video -->
+  <video autoplay loop muted playsinline id="hero-video">
+      <source src="assets/videos/curriculum_background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
 
-  <!-- Main Content -->
-  <main>
-    <section class="section">
-      <h1>Curriculum Overview</h1>
-      <p>The program consists of 120 ECTS credits over two years, balancing theory and hands-on research.</p>
-      <ul>
-        <li><strong>Core Courses (41 ECTS)</strong> – Neuroscience, AI, Machine Learning, Cybernetics.</li>
-        <li><strong>Elective Courses (19 ECTS)</strong> – Specialization in neuroinformatics, cognitive UX, or big data neuroscience.</li>
-        <li><strong>Master Thesis (60 ECTS)</strong> – Research project with faculty or external partners.</li>
-      </ul>
-      <div class="cta-buttons">
-        <a href="assets/docs/curriculum.pdf" target="_blank">Download Full Curriculum</a>
+  <!-- Gradient Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Hero Content -->
+  <div class="hero-content">
+      <h1>Explore the Digital Neuroscience Curriculum</h1>
+      <p>
+          A rigorous, interdisciplinary program combining neuroscience, AI, data science, and cybernetics.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="cta-container">
+          <a href="#core-courses" class="cta-button">Core Courses</a>
+          <a href="#electives" class="cta-button">Electives</a>
+          <a href="#thesis" class="cta-button">Master’s Thesis</a>
+          <a href="#career-outcomes" class="cta-button">Career Prospects</a>
       </div>
-    </section>
-  </main>
-
-  <!-- Dynamic Footer -->
-  <div id="footer"></div>
-
-  <script>
-    fetch('header.html').then(response => response.text()).then(data => document.getElementById('header').innerHTML = data);
-    fetch('footer.html').then(response => response.text()).then(data => document.getElementById('footer').innerHTML = data);
-  </script>
-</body>
-</html>
+  </div>
+</section>

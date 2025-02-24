@@ -373,35 +373,118 @@ section:not(.hero):nth-child(odd) {
   }
 }
 /* 🔹 About Page Section Layout */
-/* 🔹 About Hero Section */
-.about-hero {
+/* 🔹 Hero Section */
+.hero {
   position: relative;
-  height: 50vh; /* Adjust height for better balance */
+  height: 80vh; /* Adjust for optimal spacing */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: #F8F8F8;
-  padding: 40px 20px;
+  color: white;
+  overflow: hidden;
+  margin-bottom: -350px;
 }
 
-.about-hero h1 {
-  font-size: 42px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  color: #222;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+/* 🔹 Background Video */
+#hero-video {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Dark Overlay */
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+  padding-top: 50px; /* Moves content down */
+  transform: translateY(-150px); /* Fine-tune positioning */
+}
+
+/* 🔹 Hero Content Styling */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* 🔹 Title Styling */
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   margin-bottom: 10px;
 }
 
-.about-hero p {
-  font-size: 20px;
-  font-family: 'Lato', sans-serif;
-  color: #444;
-  max-width: 80%;
-  margin: 0 auto;
+/* 🔹 Subtitle Styling */
+.hero-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  color: #f4f4f4;
+  margin-bottom: 20px;
 }
+
+/* 🔹 CTA Button Styling */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: #FF6700;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #E65C00; /* Slightly darker orange */
+  color: white !important; /* Ensures text remains visible */
+  transform: scale(1.05);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+
 
 .about-section {
   display: flex;
@@ -507,4 +590,210 @@ section:not(.hero):nth-child(odd) {
     border-left: none;
     text-align: center;
   }
+}
+a {
+  color: #FF6700; /* Custom color */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: #E65C00; /* Changes color on hover */
+}
+/* 🔹 Multiscale Approach Section */
+#multiscale-approach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 80px 12%;
+  gap: 50px;
+}
+
+/* 🔹 Multiscale Approach Section */
+#multiscale-approach {
+  padding: 80px 12%;
+  text-align: left;
+  background-color: #f8f8f8; /* Light background for contrast */
+}
+
+/* 🔹 Title Styling */
+#multiscale-approach .text-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+/* 🔹 Grid Items (Boxes) */
+.grid-item {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 220px;
+}
+
+/* 🔹 Box Hover Effect */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Heading Inside Boxes */
+.grid-item h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003366; /* Deep Blue */
+  margin-bottom: 10px;
+}
+
+/* 🔹 Text Styling Inside Boxes */
+.grid-item p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 🔹 Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+/* Center the video and restrict its size */
+#video-item {
+  display: block;
+  width: 100%; /* Adjust width based on parent container */
+  max-width: 1200px; /* Limits the width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 12px;
+  margin: 20px auto; /* Centers the video */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow effect */
+}/* 🔹
+ Layout: Image on Left, Text on Right */
+#strategic-collaboration {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+  gap: 50px; /* Space between image and text */
+  padding: 80px 12%;
+}
+
+/* 🔹 Image Styling */
+.image-container {
+  flex: 1; /* Takes 40% of the width */
+  max-width: 40%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Text Styling */
+.text-content-strategic {
+  flex: 1; /* Takes 55% of the width */
+  max-width: 55%;
+  text-align: left;
+}
+
+.text-content h7 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 🔹 Responsive Layout (Mobile) */
+@media (max-width: 768px) {
+  #strategic-collaboration {
+      flex-direction: column; /* Stack items in a column */
+      text-align: center;
+  }
+
+  .image-container, .text-content {
+      max-width: 100%;
+  }
+
+  .text-content h2 {
+      text-align: center;
+  }
+}
+/* Vision Section */
+.vision-section {
+  background: #f8f8f8; /* Light gray background for readability */
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 80px 12%;
+  gap: 50px;
+
+}
+
+.vision-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision-content h2, .vision-content h3 {
+  color: #003366; /* Deep blue to maintain branding */
+  font-weight: bold;
+  text-align: left;
+}
+
+.vision-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.vision-list, .vision-resources {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vision-list li, .vision-resources li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.vision-list li strong, .vision-resources li strong {
+  color: #FF6700; /* Accent color for key points */
+}
+
+.closing-statement {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
 }
